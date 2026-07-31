@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" rx="24" fill="#eff4ff"/>
+  <g fill="none" stroke="#1447ba" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="150" cy="120" rx="40" ry="18" fill="#bcd2f8"/>
+    <path d="M110 120 L110 260 A40 18 0 0 0 190 260 L190 120" fill="#f5f8ff"/>
+    <path d="M190 150 C240 150 285 180 285 225 C285 255 265 275 235 280" fill="none"/>
+    <path d="M285 225 L235 200 M285 225 L255 265" />
+  </g>
+  <text x="200" y="345" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="1" fill="#173b82">PAPÉIS E BOBINAS</text>
+</svg>

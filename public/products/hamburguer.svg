@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" rx="24" fill="#eff4ff"/>
+  <g fill="none" stroke="#1447ba" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 165 C110 120 145 95 200 95 C255 95 290 120 290 165 Z" fill="#bcd2f8"/>
+    <line x1="100" y1="180" x2="300" y2="180"/>
+    <path d="M105 205 Q130 190 150 205 T200 205 T250 205 T295 205" fill="none"/>
+    <rect x="108" y="222" width="184" height="26" rx="10" fill="#f8cf6a" stroke="none"/>
+    <rect x="100" y="256" width="200" height="34" rx="14" fill="#c98a4a" stroke="none"/>
+    <rect x="108" y="298" width="184" height="24" rx="10" fill="#bcd2f8"/>
+  </g>
+  <text x="200" y="365" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#173b82">HAMBÚRGUER</text>
+</svg>
