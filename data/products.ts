@@ -119,7 +119,7 @@ export const products: Product[] = [
     category: "Copos",
     minOrderQty: 1,
     boxQty: null,
-    image: "/produtos/copozan-copo-plastico-liso-330-300ml-pp-copozan-c50.png",
+    image: "/produtos/copozan-copo-plastico-liso-770-700ml-pp-copozan-c50.png",
   },
   {
     id: "p010",
@@ -130,7 +130,7 @@ export const products: Product[] = [
     category: "Copos",
     minOrderQty: 1,
     boxQty: null,
-    image: "/produtos/copozan-copo-plastico-liso-440-400ml-pp-copozan-c50.png",
+    image: "/produtos/copozan-copo-plastico-liso-770-700ml-pp-copozan-c50.png",
   },
   {
     id: "p011",
@@ -141,7 +141,7 @@ export const products: Product[] = [
     category: "Copos",
     minOrderQty: 1,
     boxQty: null,
-    image: "/produtos/copozan-copo-plastico-liso-550-500ml-pp-copozan-c50.png",
+    image: "/produtos/copozan-copo-plastico-liso-770-700ml-pp-copozan-c50.png",
   },
   {
     id: "p012",
@@ -1099,6 +1099,17 @@ export const products: Product[] = [
     minOrderQty: 1,
     boxQty: null,
     image: "/produtos/plazapel-colher-sobremesa-cristal-plazapel-15cm-c100.png",
+  },
+  {
+    id: "p193",
+    slug: "colher-cafezinho-cristal-c100",
+    name: "Colher Cafezinho Cristal C/100",
+    brand: null,
+    sku: null,
+    category: "Descartáveis",
+    minOrderQty: 1,
+    boxQty: null,
+    image: "/produtos/colher-cafezinho-cristal-c100.png",
   },
   {
     id: "p099",
