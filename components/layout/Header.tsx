@@ -15,8 +15,8 @@ export function Header() {
 
       <div className="border-b border-slate-100 py-3 shadow-sm">
         <Container>
-          <div className="flex flex-col gap-3 sm:grid sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-6">
-            <Link href="/" className="shrink-0">
+          <div className="flex flex-wrap items-center gap-3 sm:grid sm:grid-cols-[auto_1fr_auto] sm:flex-nowrap sm:gap-6">
+            <Link href="/" className="order-1 shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logo/logo-redonda.jpeg"
@@ -25,9 +25,11 @@ export function Header() {
               />
             </Link>
 
-            <SearchBar />
+            <div className="order-3 w-full sm:order-2 sm:w-auto">
+              <SearchBar />
+            </div>
 
-            <div className="flex items-center justify-between gap-3 sm:justify-end">
+            <div className="order-2 ml-auto flex items-center gap-3 sm:order-3 sm:ml-0 sm:justify-end">
               <a
                 href="https://wa.me/5551992341428"
                 target="_blank"
