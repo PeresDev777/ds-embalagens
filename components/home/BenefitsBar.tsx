@@ -34,11 +34,11 @@ export function BenefitsBar() {
     <section className="bg-white py-4 sm:py-6">
       <Container>
         <div className="overflow-hidden rounded-2xl bg-brand-900 sm:rounded-3xl">
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-6 px-5 py-7 sm:grid-cols-3 sm:px-8 lg:flex lg:gap-0 lg:px-2 lg:py-6">
+          <ul className="grid grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-3 sm:gap-x-4 sm:gap-y-6 sm:px-8 sm:py-7 lg:flex lg:gap-0 lg:px-2 lg:py-6">
             {BENEFITS.map(({ icon: Icon, title, description }, index) => (
               <li
                 key={title}
-                className={`flex items-start gap-3 lg:flex-1 lg:px-6 ${
+                className={`flex items-center gap-3 sm:items-start lg:flex-1 lg:px-6 ${
                   index > 0 ? "lg:border-l lg:border-white/20" : ""
                 }`}
               >
