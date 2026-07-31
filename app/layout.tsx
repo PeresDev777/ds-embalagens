@@ -17,13 +17,40 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://ds-embalagens.vercel.app";
+const SITE_TITLE = "DS Embalagens | Embalagens para delivery em Porto Alegre";
+const SITE_DESCRIPTION =
+  "Embalagens descartáveis para delivery em Porto Alegre e região: hambúrguer, pizza, marmita, copos, açaí, confeitaria, sacos e descartáveis em geral. Preço baixo e pronta entrega.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "DS Embalagens | Embalagens para delivery em Porto Alegre",
+    default: SITE_TITLE,
     template: "%s | DS Embalagens",
   },
-  description:
-    "Embalagens descartáveis para delivery em Porto Alegre e região: hambúrguer, pizza, marmita, copos, açaí, confeitaria, sacos e descartáveis em geral. Preço baixo e pronta entrega.",
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "DS Embalagens",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/logo/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "DS Embalagens",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/logo/og-image.png"],
+  },
 };
 
 export default function RootLayout({
