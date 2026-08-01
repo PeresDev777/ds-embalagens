@@ -8,7 +8,7 @@ export function PromoSection() {
       <Container>
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
           <Link
-            href="/categoria/hamburguer"
+            href="/categoria/embalagens-de-isopor"
             className="relative aspect-[1600/372] w-full overflow-hidden rounded-2xl transition-transform hover:scale-[1.01] active:scale-[0.99]"
           >
             <Image

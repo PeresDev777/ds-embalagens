@@ -28,9 +28,6 @@ export function Hero() {
               <span className="block text-4xl sm:text-5xl xl:text-6xl">Delivery</span>
               <span className="block text-lg sm:text-xl">em um só lugar!</span>
             </h1>
-            <p className="mt-2 text-sm text-brand-100 sm:text-base">
-              Mais de 2.000 produtos para seu negócio
-            </p>
 
             <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5 text-xs font-medium text-white sm:text-sm">
               {CHECKLIST.map((item) => (
@@ -43,7 +40,7 @@ export function Hero() {
 
             <div className="mt-4 flex flex-wrap gap-2">
               <Link
-                href="/categoria/hamburguer"
+                href="/categoria/embalagens-de-isopor"
                 className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-white px-4 py-2.5 text-xs font-bold uppercase text-brand-800 shadow-sm transition-transform hover:scale-[1.03] active:scale-[0.98]"
               >
                 <ShoppingCart size={15} />

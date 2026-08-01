@@ -1,5 +1,6 @@
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, Package, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { InstagramIcon } from "@/components/ui/InstagramIcon";
 
 const POLICY_LINKS = [
   "Sobre nós",
@@ -8,9 +9,6 @@ const POLICY_LINKS = [
   "Política de privacidade",
   "Fale conosco",
 ];
-
-const STORE_ADDRESS = "Av. Adelino Ferreira Jardim, 170, Núcleo 5, Rubem Berta, Porto Alegre - RS";
-const STORE_MAP_QUERY = encodeURIComponent(STORE_ADDRESS);
 
 const PAYMENT_METHODS = [
   { name: "Visa", file: "/payment/payment-visa.svg" },
@@ -66,7 +64,7 @@ const COLUMNS = [
           </li>
           <li className="flex items-center gap-2">
             <Mail size={14} className="shrink-0 text-brand-300" />
-            contato@dsembalagenspoa.com.br
+            compras.dsembalagens@gmail.com
           </li>
           <li className="flex items-start gap-2">
             <Clock size={14} className="mt-0.5 shrink-0 text-brand-300" />
@@ -75,6 +73,17 @@ const COLUMNS = [
               <br />
               Domingo: 09h às 18h
             </span>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/dsembalagenspoa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 font-semibold text-white transition-colors hover:text-brand-200"
+            >
+              <InstagramIcon size={16} className="shrink-0 text-brand-300" />
+              @dsembalagenspoa
+            </a>
           </li>
         </ul>
       </div>
@@ -107,41 +116,28 @@ const COLUMNS = [
     ),
   },
   {
-    key: "mapa",
+    key: "retirada",
     content: (
       <div>
         <h3 className="mb-2 flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide text-white">
           <MapPin size={14} className="text-brand-300" />
-          Onde estamos
+          Onde retirar
         </h3>
-        <div className="flex items-start gap-3">
-          <div className="flex-1">
-            <p className="text-xs leading-relaxed text-brand-200">
-              Av. Adelino Ferreira Jardim, 170 - Núcleo 5
-              <br />
-              Rubem Berta - Porto Alegre - RS
-            </p>
-            <a
-              href={`https://www.google.com/maps?q=${STORE_MAP_QUERY}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-block rounded-full border border-white/25 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white/10"
-            >
-              Ver no mapa
-            </a>
-          </div>
-          <div className="h-[72px] w-[72px] shrink-0 overflow-hidden rounded-lg border border-white/10">
-            <iframe
-              title="Mapa - DS Embalagens, Rubem Berta, Porto Alegre"
-              src={`https://www.google.com/maps?q=${STORE_MAP_QUERY}&output=embed`}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-        </div>
+        <p className="text-xs leading-relaxed text-brand-200">
+          Av. Adelino Ferreira Jardim, 170 - Núcleo 5
+          <br />
+          Rubem Berta - Porto Alegre - RS
+        </p>
+        <p className="mt-2 text-xs leading-relaxed text-brand-200">
+          <span className="font-semibold text-white">Atendimento exclusivamente virtual.</span>
+          <br />
+          Este endereço é destinado somente à retirada de pedidos, mediante agendamento ou
+          confirmação prévia.
+        </p>
+        <span className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-white/25 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
+          <Package size={12} />
+          Retirada no local
+        </span>
       </div>
     ),
   },
