@@ -5,21 +5,14 @@ import { Plus } from "lucide-react";
 import type { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import { getProductImage } from "@/lib/productImage";
-import { getDisplayName } from "@/lib/productName";
+import { getCardDisplayName } from "@/lib/productName";
 import { QuantityStepper } from "@/components/ui/QuantityStepper";
-
-// Produtos com foto própria e exclusiva, onde a medida no título é
-// redundante (a estampa já diferencia os cards) — mantém medida completa
-// só na página de produto.
-const HIDE_DIMENSIONS_IDS = new Set(["p079", "p080", "p081", "p082"]);
 
 export function ProductCard({ product }: { product: Product }) {
   const { lines, addItem, updateQuantity } = useCart();
   const line = lines.find((l) => l.productId === product.id);
   const quantity = line?.quantity ?? 0;
-  const displayName = HIDE_DIMENSIONS_IDS.has(product.id)
-    ? getDisplayName(product.name)
-    : product.name;
+  const displayName = getCardDisplayName(product);
 
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white transition-shadow hover:shadow-md hover:shadow-slate-200/60">

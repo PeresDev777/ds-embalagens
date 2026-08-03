@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 
 export function PromoSection() {
@@ -7,8 +6,10 @@ export function PromoSection() {
     <section className="py-6">
       <Container>
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-          <Link
-            href="/categoria/embalagens-de-isopor"
+          <a
+            href="https://dsembalagens.my.canva.site/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative aspect-[1600/372] w-full overflow-hidden rounded-2xl transition-transform hover:scale-[1.01] active:scale-[0.99]"
           >
             <Image
@@ -18,7 +19,7 @@ export function PromoSection() {
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
             />
-          </Link>
+          </a>
 
           <a
             href="https://wa.me/5551992341428"

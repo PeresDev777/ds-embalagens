@@ -5,6 +5,7 @@ import { ShoppingBag, Trash2, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { buildWhatsAppOrderUrl } from "@/lib/whatsapp";
 import { getProductImage } from "@/lib/productImage";
+import { getCardDisplayName } from "@/lib/productName";
 import { QuantityStepper } from "@/components/ui/QuantityStepper";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
@@ -63,7 +64,7 @@ export function CartDrawer() {
         ) : (
           <ul className="flex-1 divide-y divide-slate-100 overflow-y-auto px-5">
             {lines.map((line) => {
-              const displayName = line.product.name;
+              const displayName = getCardDisplayName(line.product);
               return (
               <li key={line.productId} className="flex gap-3 py-4">
                 <div className="h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-brand-50">

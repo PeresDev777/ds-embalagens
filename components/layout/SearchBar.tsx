@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Search } from "lucide-react";
 import { products } from "@/data/products";
 import { getProductImage } from "@/lib/productImage";
+import { getCardDisplayName } from "@/lib/productName";
 
 export function SearchBar() {
   const [query, setQuery] = useState("");
@@ -67,7 +68,7 @@ export function SearchBar() {
                   className="h-10 w-10 shrink-0 rounded-lg bg-brand-50 object-cover"
                 />
                 <span className="flex-1 text-sm font-medium text-slate-700">
-                  {product.name}
+                  {getCardDisplayName(product)}
                 </span>
                 <span className="text-xs font-medium text-slate-400">{product.category}</span>
               </Link>
